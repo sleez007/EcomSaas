@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">@android:color/white</color>
+    <color name="colorPrimary">#FF0266</color>
     <color name="colorPrimaryDark">@android:color/white</color>
     <color name="colorAccent">#E53935</color>
     <color name="colorNavigation">@android:color/white</color>
+
+    <!--BOTTOM NAVIGATION VIEW COLORS-->
+    <color name="bottom_nav_icon_tint">@android:color/black</color>
+    <color name="bottom_nav_bg_color">@android:color/white</color>
+
+    <!--TOOLBAR COLOR-->
+    <color name="tool_bar_bg">@color/colorPrimaryDark</color>
 </resources>

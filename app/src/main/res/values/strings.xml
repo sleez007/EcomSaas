@@ -14,4 +14,8 @@
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
     <string name="preference_key_theme_option">theme_option</string>
+    <string name="categories">Categories</string>
+    <string name="favorites">Favorites</string>
+    <string name="home">Home</string>
+    <string name="cart">Cart</string>
 </resources>

@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#272727</color>
+    <color name="colorPrimary">#FF90B5</color>
     <color name="colorPrimaryDark">#121212</color>
     <color name="colorAccent">#FF6E40</color>
     <color name="colorNavigation">#121212</color>
+
+    <!--BOTTOM NAVIGATION VIEW COLORS-->
+    <color name="bottom_nav_icon_tint">#99FFFFFF</color>
+    <color name="bottom_nav_bg_color">#2E2E2E</color>
+
+    <!--TOOLBAR COLOR-->
+    <color name="tool_bar_bg">#272727</color>
 </resources>
