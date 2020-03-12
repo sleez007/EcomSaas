@@ -8,13 +8,13 @@
     <item android:title="@string/categories"
         android:icon="@drawable/ic_filter_list_black_24dp"
         app:iconTint="@color/bottom_nav_icon_tint"
-        android:id="@+id/action_category"/>
+        android:id="@+id/nav_category"/>
     <item android:title="@string/favorites"
         android:icon="@drawable/ic_favorite_black_24dp"
         app:iconTint="@color/bottom_nav_icon_tint"
-        android:id="@+id/action_favorities"/>
+        android:id="@+id/nav_favorites"/>
     <item android:title="@string/cart"
         android:icon="@drawable/ic_shopping_basket_black_24dp"
         app:iconTint="@color/bottom_nav_icon_tint"
-        android:id="@+id/nav_tools"/>
+        android:id="@+id/nav_cart"/>
 </menu>

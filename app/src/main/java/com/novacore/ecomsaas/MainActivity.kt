@@ -1,5 +1,6 @@
 package com.novacore.ecomsaas
 
+import android.opengl.Visibility
 import android.os.Bundle
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
@@ -13,7 +14,9 @@ import com.google.android.material.navigation.NavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import android.view.Menu
+import android.view.View
 import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.navigation.NavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.content_main.*
 
@@ -21,6 +24,8 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     lateinit var drawerLayout: DrawerLayout
+    private lateinit var navController: NavController
+    lateinit var  bottomNav : BottomNavigationView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,8 +34,8 @@ class MainActivity : AppCompatActivity() {
 //        setSupportActionBar(toolbar)
         drawerLayout = findViewById(R.id.drawer_layout)
         val navView: NavigationView = findViewById(R.id.nav_view)
-        val navController = findNavController(R.id.nav_host_fragment)
-        val bottomNav : BottomNavigationView = findViewById(R.id.bottomNavigationView)
+        navController = findNavController(R.id.nav_host_fragment)
+        bottomNav = findViewById(R.id.bottomNavigationView)
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
@@ -42,6 +47,7 @@ class MainActivity : AppCompatActivity() {
        // setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
         bottomNav.setupWithNavController(navController)
+        setNavigationListener()
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -64,5 +70,15 @@ class MainActivity : AppCompatActivity() {
 
         drawerLayout.addDrawerListener(toggle)
         toggle.syncState()
+    }
+
+    private fun setNavigationListener(){
+        navController.addOnDestinationChangedListener { controller, destination, arguments ->
+            if(destination.id == R.id.nav_home || destination.id == R.id.nav_cart || destination.id == R.id.nav_category || destination.id == R.id.nav_favorites){
+               bottomNav.visibility = View.VISIBLE
+            }else{
+                bottomNav.visibility = View.GONE
+            }
+        }
     }
 }

@@ -1,8 +1,8 @@
-package com.novacore.ecomsaas.ui.wizard
+package com.novacore.ecomsaas.ui.splash
 
 import androidx.lifecycle.ViewModel
 import javax.inject.Inject
 
-class WizardViewModel @Inject constructor() : ViewModel() {
+class SplashViewModel @Inject constructor() : ViewModel() {
     // TODO: Implement the ViewModel
 }

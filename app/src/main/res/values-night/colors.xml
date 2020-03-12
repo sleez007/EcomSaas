@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#FF90B5</color>
     <color name="colorPrimaryDark">#121212</color>
-    <color name="colorAccent">#FF6E40</color>
+    <color name="colorAccent">#9475EB</color>
     <color name="colorNavigation">#121212</color>
 
     <!--BOTTOM NAVIGATION VIEW COLORS-->
@@ -11,4 +11,7 @@
 
     <!--TOOLBAR COLOR-->
     <color name="tool_bar_bg">#272727</color>
+
+    <!--Typography Texts-->
+    <color name="txt_primary_color">#FFFFFF</color>
 </resources>

@@ -3,18 +3,50 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
-
-    <fragment
-        android:id="@+id/nav_home"
-        android:name="com.novacore.ecomsaas.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+    app:startDestination="@id/navigation">
 
     <fragment
         android:id="@+id/nav_tools"
         android:name="com.novacore.ecomsaas.ui.tools.ToolsFragment"
         android:label="@string/menu_tools"
         tools:layout="@layout/fragment_tools" />
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.novacore.ecomsaas.ui.splash.SplashFragment"
+        android:label="fragment_spash"
+        tools:layout="@layout/fragment_spash" >
+        <action
+            android:id="@+id/action_splashFragment_to_wizard"
+            app:destination="@id/wizard" />
+    </fragment>
+    <fragment
+        android:id="@+id/wizard"
+        android:name="com.novacore.ecomsaas.ui.wizard.Wizard"
+        android:label="fragment_wizard"
+        tools:layout="@layout/fragment_wizard" />
+    <navigation
+        android:id="@+id/navigation"
+        app:startDestination="@id/nav_home" >
+        <fragment
+            android:id="@+id/nav_favorites"
+            android:name="com.novacore.ecomsaas.ui.favorites.FavoriteFragment"
+            android:label="fragment_favorite"
+            tools:layout="@layout/fragment_favorite" />
+        <fragment
+            android:id="@+id/nav_category"
+            android:name="com.novacore.ecomsaas.ui.category.CategoryFragment"
+            android:label="fragment_category"
+            tools:layout="@layout/fragment_category" />
+        <fragment
+            android:id="@+id/nav_home"
+            android:name="com.novacore.ecomsaas.ui.home.HomeFragment"
+            android:label="@string/menu_home"
+            tools:layout="@layout/fragment_home" />
+        <fragment
+            android:id="@+id/nav_cart"
+            android:name="com.novacore.ecomsaas.ui.cart.CartFragment"
+            android:label="fragment_cart"
+            tools:layout="@layout/fragment_cart" />
+    </navigation>
 
 </navigation>

@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#FF0266</color>
     <color name="colorPrimaryDark">@android:color/white</color>
-    <color name="colorAccent">#E53935</color>
+    <color name="colorAccent">#3E2AD1</color>
     <color name="colorNavigation">@android:color/white</color>
 
     <!--BOTTOM NAVIGATION VIEW COLORS-->
@@ -11,4 +11,7 @@
 
     <!--TOOLBAR COLOR-->
     <color name="tool_bar_bg">@color/colorPrimaryDark</color>
+
+    <!--Typography Texts-->
+    <color name="txt_primary_color">#000000</color>
 </resources>
