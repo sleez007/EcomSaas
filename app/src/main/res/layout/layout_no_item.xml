@@ -7,6 +7,7 @@
     <ImageView
         android:layout_width="60dp"
         android:layout_height="60dp"
+        android:tint="@color/notice_icons_color"
         android:src="@drawable/ic_find_in_page_black_45dp"
         />
     <TextView

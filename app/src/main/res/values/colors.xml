@@ -14,4 +14,11 @@
 
     <!--Typography Texts-->
     <color name="txt_primary_color">#000000</color>
+
+    <!--ICON COLORS-->
+    <color name="notice_icons_color">#757575</color>
+
+
+    <color name="item_category_card_color">#FFFFFF</color>
+    <color name="slider_btn_overlay">#40000000</color>
 </resources>
