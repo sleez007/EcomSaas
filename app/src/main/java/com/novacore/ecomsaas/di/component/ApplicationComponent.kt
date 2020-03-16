@@ -2,10 +2,7 @@ package com.novacore.ecomsaas.di.component
 
 import android.content.Context
 import com.novacore.ecomsaas.EcomApp
-import com.novacore.ecomsaas.di.module.FragmentModule
-import com.novacore.ecomsaas.di.module.NetworkModule
-import com.novacore.ecomsaas.di.module.RoomModule
-import com.novacore.ecomsaas.di.module.ViewModelModule
+import com.novacore.ecomsaas.di.module.*
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjector
@@ -17,6 +14,7 @@ import javax.inject.Singleton
     AndroidSupportInjectionModule::class,
     NetworkModule::class,
     RoomModule::class,
+    AppModule::class,
     FragmentModule::class,
     ViewModelModule::class
 ])

@@ -2,6 +2,7 @@ package com.novacore.ecomsaas.di.module
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import com.novacore.ecomsaas.di.annotation.FragmentScope
 import com.novacore.ecomsaas.di.annotation.ViewModelKey
 import com.novacore.ecomsaas.helper.ViewModelProviderFactory
 import com.novacore.ecomsaas.ui.cart.CartViewModel
@@ -16,7 +17,6 @@ import dagger.multibindings.IntoMap
 
 @Module
 abstract class ViewModelModule {
-
     @Binds
     abstract fun bindViewModelFactory(factory: ViewModelProviderFactory): ViewModelProvider.Factory
 

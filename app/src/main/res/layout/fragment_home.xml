@@ -95,17 +95,100 @@
                                 android:layout_alignParentLeft="true"
                                 android:layout_alignParentTop="true"
                                 android:layout_marginLeft="16dp"
-                                android:fontFamily="@font/roboto"
+                                android:fontFamily="@font/roboto_medium"
                                 android:text="New Arrivals"
+                                android:id="@+id/new_av"
                                 android:textColor="@color/txt_primary_color"
-                                android:textSize="20sp" />
+                                android:textSize="14sp" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentRight="true"
-                                android:layout_marginRight="16dp"
                                 android:layout_alignParentTop="true"
-                                android:text="See All"/>
+                                android:layout_marginTop="0dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginBottom="0dp"
+                                android:text="See All" />
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:layout_marginTop="16dp"
+                                android:layout_width="match_parent"
+                                android:layout_below="@+id/new_av"
+                                android:id="@+id/arrival_recycler"
+                                tools:listitem="@layout/item_product_hr"
+                                android:orientation="horizontal"
+                                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                                android:layout_height="wrap_content"/>
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginBottom="16dp">
+
+                            <TextView
+                                android:id="@+id/flash_s"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="16dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="Flash Sales"
+                                android:textColor="@color/txt_primary_color"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginBottom="0dp"
+                                android:text="See All" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/flash_recycler"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/flash_s"
+                                android:layout_marginTop="16dp"
+                                android:orientation="horizontal"
+                                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                                tools:listitem="@layout/item_product_hr" />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="0dp"
+                            >
+
+                            <TextView
+                                android:id="@+id/rand_items"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="16dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="Items you will love"
+                                android:textColor="@color/txt_primary_color"
+                                android:textSize="14sp" />
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/random_recycler"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_below="@+id/rand_items"
+                                android:layout_marginTop="16dp"
+                                android:overScrollMode="never"
+                                android:layout_alignParentBottom="true"
+                                android:orientation="vertical"
+                                android:clipToPadding="true"
+                                android:paddingLeft="16dp"
+                                android:paddingRight="16dp"
+                                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                                tools:listitem="@layout/item_product_long_hr" />
                         </RelativeLayout>
 
                     </LinearLayout>

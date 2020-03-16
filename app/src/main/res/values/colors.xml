@@ -17,6 +17,7 @@
 
     <!--ICON COLORS-->
     <color name="notice_icons_color">#757575</color>
+    <color name="icon_default">#000000</color>
 
 
     <color name="item_category_card_color">#FFFFFF</color>
